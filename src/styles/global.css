@@ -1,0 +1,149 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+  font-size: 12px;
+}
+
+main {
+  width: 100%;
+  height: 75vh;
+  background-color: rgb(244, 244, 244);
+  color: rgb(51, 51, 51);
+  display: flex;
+  flex-direction: column;
+  margin: 30px auto;
+  max-width: 600px;
+  padding: 15px 30px;
+}
+
+/* Add Todo Styles */
+.add-container {
+  width: 100%;
+  margin: 15px 0;
+}
+
+.add-container input {
+  width: 100%;
+  border-radius: 0;
+  background-color: #fff;
+  padding: 5px;
+  border: 0;
+}
+
+.add-container button {
+  width: 100%;
+  cursor: pointer;
+  border-radius: 0;
+  background-color: #555;
+  color: #fff;
+  padding: 5px;
+}
+
+/* Todo Action Styles */
+.todo-actions-wrapper {
+  width: 100%;
+  display: block;
+}
+.todo-actions-wrapper button {
+  cursor: pointer;
+  font-weight: 500;
+  padding: 7px 4px;
+  border: 0px;
+  color: #ffffff;
+  width: 100%;
+}
+
+.all-todos-button {
+  background-color: #000000;
+}
+
+.show-comp-todos-button {
+  background-color: #038b0c;
+}
+
+.show-uncomp-todos-button {
+  background-color: #333333;
+}
+
+.clear-comp-todos-button {
+  background-color: #2843bb;
+}
+
+.clear-all-todos-button {
+  background-color: #d20606;
+}
+
+/* List Todos Styles */
+.list-todos {
+  border: 1px solid #33333329;
+  padding: 10px;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.list-todos li {
+  list-style: none;
+  margin: 7px 0;
+  color: #555;
+  width: 100%;
+  position: relative;
+}
+
+.list-todos input {
+  margin-right: 5px;
+  background-color: #fff;
+}
+
+.list-todos span {
+  margin-left: 5px;
+  background-color: #fff;
+  position: absolute;
+  right: 10px;
+  color: #d20606;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+@media screen and (min-width: 411px) {
+  html {
+    font-size: 14px;
+  }
+  .add-container input {
+    width: 80%;
+    border-radius: 4px 0px 0px 4px;
+  }
+  .add-container button {
+    width: 20%;
+    border-radius: 0 4px 4px 0;
+  }
+}
+
+@media screen and (min-width: 400px) {
+  .todo-actions-wrapper button {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 588px) {
+  .todo-actions-wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .todo-actions-wrapper button {
+    width: auto;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  html {
+    font-size: 16px;
+  }
+}
