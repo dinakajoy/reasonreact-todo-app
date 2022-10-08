@@ -11,4 +11,7 @@ npm run server
 npm start
 ```
 
-Open a new web page to `http://localhost:5000/`. Change any `.re` file in `src` to see the page auto-reload.
+Open a new web page to `http://localhost:5000/`.   
+Change any `.re` file in `src` to see the page auto-reload.
+
+Live Demo: [https://reasonreact-todo-app.netlify.app/](https://reasonreact-todo-app.netlify.app/)
